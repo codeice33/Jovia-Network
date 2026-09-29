@@ -13,6 +13,7 @@ import {
   Link2,
   LockKeyhole,
   LogOut,
+  Music2,
   Play,
   ShieldCheck,
   Wallet,
@@ -119,8 +120,8 @@ export default function Dashboard() {
           </section>
         )}
 
-        <section className="mt-6 grid items-stretch gap-4 lg:grid-cols-[minmax(0,2fr)_minmax(260px,1fr)]">
-          <div>
+        <section className="mt-6 grid min-w-0 items-stretch gap-4 lg:grid-cols-2">
+          <div className="min-w-0">
             <div
               ref={balancesRef}
               role="region"
@@ -128,7 +129,7 @@ export default function Dashboard() {
               aria-label="Member balances"
               tabIndex={0}
               onScroll={updateBalanceSlide}
-              className="flex h-[232px] snap-x snap-mandatory overflow-x-auto scroll-smooth rounded-xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#542B6C] motion-reduce:scroll-auto"
+              className="flex h-[232px] w-full min-w-0 snap-x snap-mandatory overflow-x-auto scroll-smooth rounded-xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#542B6C] motion-reduce:scroll-auto"
               style={{ scrollbarWidth: 'none' }}
             >
               <article role="group" aria-roledescription="slide" aria-label="1 of 2: Available balance" className="h-full w-full shrink-0 snap-start rounded-xl bg-white p-5 shadow-[0_4px_20px_rgba(38,8,61,0.04)] sm:p-6">
@@ -198,7 +199,7 @@ export default function Dashboard() {
             <div><p className="text-xs font-bold uppercase tracking-[0.15em] text-[#8B8092]">Earning activities</p><h2 className="mt-1 font-display text-xl font-bold">Choose how to earn</h2></div>
             <span className="text-xs font-semibold text-[#8B8092]">{isActive ? 'Account active' : 'Available after activation'}</span>
           </div>
-          <div className="mt-4 grid gap-4 sm:grid-cols-2">
+          <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             <article className="rounded-xl border border-[#EAE3EE] bg-white p-5 sm:p-6">
               <div className="flex items-start justify-between"><span className="grid h-11 w-11 place-items-center rounded-lg bg-[#F4ECF8] text-[#542B6C]"><Gamepad2 size={22} /></span>{!isActive && <LockKeyhole size={18} className="text-[#93869B]" />}</div>
               <h3 className="mt-5 font-display text-lg font-bold">Play games</h3>
@@ -210,6 +211,12 @@ export default function Dashboard() {
               <h3 className="mt-5 font-display text-lg font-bold">Watch videos</h3>
               <p className="mt-1 text-sm leading-relaxed text-[#756A7D]">Watch eligible videos and view your verified activity rewards after activation.</p>
               <button disabled={!isActive} className="mt-5 inline-flex items-center gap-2 rounded-lg bg-[#F2EDF5] px-4 py-2.5 text-sm font-bold text-[#4C3A58] disabled:cursor-not-allowed disabled:opacity-70 enabled:bg-[#2B0A43] enabled:text-white">{isActive ? 'Browse videos' : 'Locked until activation'} {isActive && <ArrowUpRight size={16} />}</button>
+            </article>
+            <article className="rounded-xl border border-[#EAE3EE] bg-white p-5 sm:p-6">
+              <div className="flex items-start justify-between"><span className="grid h-11 w-11 place-items-center rounded-lg bg-[#E8F5F1] text-[#246B55]"><Music2 size={21} /></span>{!isActive && <LockKeyhole size={18} className="text-[#93869B]" />}</div>
+              <h3 className="mt-5 font-display text-lg font-bold">Stream music and earn</h3>
+              <p className="mt-1 text-sm leading-relaxed text-[#756A7D]">Stream eligible music and view your verified activity rewards after activation.</p>
+              <button disabled={!isActive} className="mt-5 inline-flex items-center gap-2 rounded-lg bg-[#F2EDF5] px-4 py-2.5 text-sm font-bold text-[#4C3A58] disabled:cursor-not-allowed disabled:opacity-70 enabled:bg-[#2B0A43] enabled:text-white">{isActive ? 'Browse music' : 'Locked until activation'} {isActive && <ArrowUpRight size={16} />}</button>
             </article>
           </div>
         </section>
