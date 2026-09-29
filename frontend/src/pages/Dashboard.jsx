@@ -208,7 +208,7 @@ export default function Dashboard() {
             </article>
             <article className="rounded-xl border border-[#EAE3EE] bg-white p-5 sm:p-6">
               <div className="flex items-start justify-between"><span className="grid h-11 w-11 place-items-center rounded-lg bg-[#FFF6D7] text-[#725500]"><Play size={21} /></span>{!isActive && <LockKeyhole size={18} className="text-[#93869B]" />}</div>
-              <h3 className="mt-5 font-display text-lg font-bold">Watch videos</h3>
+              <h3 className="mt-5 font-display text-lg font-bold">Watch celebrity videos</h3>
               <p className="mt-1 text-sm leading-relaxed text-[#756A7D]">Watch eligible videos and view your verified activity rewards after activation.</p>
               <button disabled={!isActive} className="mt-5 inline-flex items-center gap-2 rounded-lg bg-[#F2EDF5] px-4 py-2.5 text-sm font-bold text-[#4C3A58] disabled:cursor-not-allowed disabled:opacity-70 enabled:bg-[#2B0A43] enabled:text-white">{isActive ? 'Browse videos' : 'Locked until activation'} {isActive && <ArrowUpRight size={16} />}</button>
             </article>
