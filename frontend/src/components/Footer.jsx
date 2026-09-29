@@ -1,4 +1,4 @@
-import logo from "@/assets/img/evermorelogoblack.png";
+import logo from "@/assets/logo2.png";
 
 export default function Footer() {
   return (
@@ -31,7 +31,7 @@ export default function Footer() {
           z-0
         "
       >
-        Evermore
+        Jovia
       </div>
 
       <div className="relative z-10">
@@ -42,14 +42,16 @@ export default function Footer() {
             <div className="lg:col-span-5">
               <img
                 src={logo}
-                alt="Evermore"
-                className="h-14 w-auto object-contain"
+                alt="Jovia Network Logo"
+                width="100"
+                height="100"
+                className="h-[100px] w-[100px] object-contain"
               />
 
               <p className="mt-5 text-white/70 leading-relaxed text-sm max-w-md">
-                EverAI is our flagship Artificial Intelligence platform,
-                designed to learn, evolve and become more intelligent through
-                real human interaction and training.
+                Jovia Network brings together networking, digital skills,
+                entertainment, and engaging activities across multiple
+                categories.
               </p>
             </div>
 
@@ -60,7 +62,7 @@ export default function Footer() {
               <ul className="mt-4 space-y-3 text-sm text-white/60">
                 <li>
                   <a href="about" className="hover:text-white transition">
-                    About Evermore
+                    About Jovia
                   </a>
                 </li>
 
@@ -71,14 +73,14 @@ export default function Footer() {
                 </li>
 
                 <li>
-                  <a href="#reward" className="hover:text-white transition">
-                    Reward System
+                  <a href="#plans" className="hover:text-white transition">
+                    Activities
                   </a>
                 </li>
 
                 <li>
-                  <a href="#everai" className="hover:text-white transition">
-                    EverAI
+                  <a href="#about" className="hover:text-white transition">
+                    About Jovia
                   </a>
                 </li>
               </ul>
@@ -116,7 +118,7 @@ export default function Footer() {
           {/* Bottom */}
           <div className="pt-6 flex flex-col md:flex-row justify-between items-center gap-3">
             <p className="text-white/40 text-xs md:text-sm">
-              © 2026 Evermore. All Rights Reserved.
+              © 2026 Jovia Network. All Rights Reserved.
             </p>
           </div>
         </div>

@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
-import logo from "@/assets/img/evermorelogo.png";
+import logo from "@/assets/logo.png";
 
-export default function SignupForm() {
+export default function SignupForm({ existingUsers = [], onSuccess }) {
   const [searchParams] = useSearchParams();
 
   const [loading, setLoading] = useState(false);
@@ -59,32 +59,24 @@ export default function SignupForm() {
       return setError("Passwords do not match.");
     }
 
-    try {
-      setLoading(true);
-
-      const res = await fetch(
-        "https://api.evermorenetwork.com/api/create-payment",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(form),
-        },
-      );
-
-      const data = await res.json();
-
-      if (data.link) {
-        window.location.href = data.link;
-      } else {
-        setError(data.message || "Unable to initialize payment.");
-      }
-    } catch (err) {
-      setError("Something went wrong.");
-    } finally {
-      setLoading(false);
+    if (!onSuccess) {
+      return setError("Signup is temporarily unavailable. Please try again later.");
     }
+
+    const normalizedEmail = form.email.trim().toLowerCase();
+    if (existingUsers.some((user) => user.email?.toLowerCase() === normalizedEmail)) {
+      return setError("An account with this email already exists.");
+    }
+
+    setLoading(true);
+    onSuccess({
+      name: form.fullname.trim(),
+      phone: form.phone.trim(),
+      email: normalizedEmail,
+      plan: form.plan,
+      referredBy: searchParams.get("ref")?.trim() || null,
+    });
+    setLoading(false);
   };
 
   return (
@@ -94,8 +86,10 @@ export default function SignupForm() {
         <div className="px-8 pt-8 pb-6 text-center">
           <img
             src={logo}
-            alt="Evermore"
-            className="h-12 mx-auto object-contain"
+            alt="Jovia Network Logo"
+            width="100"
+            height="100"
+            className="h-[100px] w-[100px] mx-auto object-contain"
           />
 
           <h2 className="mt-5 text-3xl font-black text-[#0E2258]">
@@ -103,7 +97,7 @@ export default function SignupForm() {
           </h2>
 
           <p className="mt-2 text-slate-500">
-            Join Evermore and unlock AI opportunities.
+            Join Jovia Network and explore its activities.
           </p>
         </div>
 
@@ -126,7 +120,7 @@ export default function SignupForm() {
               name="fullname"
               value={form.fullname}
               onChange={handleChange}
-              placeholder="John Doe"
+              placeholder="Full Name"
               className="w-full px-4 py-3 rounded-2xl border border-slate-300 focus:border-[#0F9AC5] focus:outline-none"
             />
           </div>
@@ -142,7 +136,7 @@ export default function SignupForm() {
               name="phone"
               value={form.phone}
               onChange={handleChange}
-              placeholder="08012345678"
+              placeholder="Phone Number"
               className="w-full px-4 py-3 rounded-2xl border border-slate-300 focus:border-[#0F9AC5] focus:outline-none"
             />
           </div>
@@ -158,7 +152,7 @@ export default function SignupForm() {
               name="email"
               value={form.email}
               onChange={handleChange}
-              placeholder="john@example.com"
+              placeholder="jovia@example.com"
               className="w-full px-4 py-3 rounded-2xl border border-slate-300 focus:border-[#0F9AC5] focus:outline-none"
             />
           </div>
@@ -196,14 +190,14 @@ export default function SignupForm() {
 
                 <div className="flex justify-between items-center">
                   <div>
-                    <h3 className="font-bold text-[#0E2258]">Ever AI Trial</h3>
+                    <h3 className="font-bold text-[#0E2258]">Jovia Silver</h3>
 
                     <p className="text-sm text-slate-500">
-                      Perfect for getting started
+                      Smash Bonus: ₦9,000
                     </p>
                   </div>
 
-                  <span className="font-black text-[#0F9AC5]">₦7,000</span>
+                  <span className="font-black text-[#0F9AC5]">₦9,000</span>
                 </div>
               </label>
 
@@ -215,7 +209,6 @@ export default function SignupForm() {
                   border-2
                   p-4
                   transition-all
-                  relative
                   ${
                     form.plan === "Premium"
                       ? "border-[#00E57B] bg-[#00E57B]/5"
@@ -223,10 +216,6 @@ export default function SignupForm() {
                   }
                 `}
               >
-                <span className="absolute top-3 right-3 text-[10px] font-bold px-2 py-1 rounded-full bg-[#00E57B] text-[#0E2258]">
-                  MOST POPULAR
-                </span>
-
                 <input
                   type="radio"
                   name="plan"
@@ -236,18 +225,23 @@ export default function SignupForm() {
                   className="hidden"
                 />
 
-                <div className="flex justify-between items-center">
-                  <div>
+                <div className="flex items-center justify-between gap-3">
+                  <div className="min-w-0">
                     <h3 className="font-bold text-[#0E2258]">
-                      Ever AI Premium
+                      Jovia Gold
                     </h3>
 
                     <p className="text-sm text-slate-500">
-                      Higher rewards and priority access
+                      Smash Bonus: ₦15,000
                     </p>
                   </div>
 
-                  <span className="font-black text-[#00B56A]">₦14,000</span>
+                  <div className="flex shrink-0 flex-col items-end gap-1.5">
+                    <span className="whitespace-nowrap rounded-full bg-[#00E57B] px-2 py-1 text-[10px] font-bold text-[#0E2258]">
+                      MOST POPULAR
+                    </span>
+                    <span className="whitespace-nowrap font-black text-[#00B56A]">₦15,000</span>
+                  </div>
                 </div>
               </label>
             </div>

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
-import logo from "@/assets/img/evermorelogo.png";
+import logo from "@/assets/logo.png";
 
 const NAV_LINKS = [
   { href: "about", label: "About Us" },
@@ -12,20 +12,20 @@ const NAV_LINKS = [
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  // SEO Description and Keyword Strategy derived from Evermore branding content
-  const pageTitle = "Evermore Network | AI Training & Rewards Ecosystem";
-  const pageDescription = "Bridging digital and real-world opportunities. Train next-generation Generative AI, improve core memory functions, and earn rewards.";
-  const siteUrl = "https://evermorenetwork.com";
+  // SEO metadata for the Jovia Network brand
+  const pageTitle = "Jovia Network | Intelligent Advancement";
+  const pageDescription = "Explore Jovia Network: networking, digital skills, entertainment, and engaging activities across multiple categories.";
+  const siteUrl = import.meta.env.VITE_SITE_URL || window.location.origin;
 
   // Structured Data (JSON-LD) for Search Engine Crawlers
   const schemaData = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "Evermore Network",
+    "name": "Jovia Network",
     "url": siteUrl,
-    "logo": `${siteUrl}/src/assets/img/evermorelogo.png`,
-    "description": "Evermore is a brand created to bridge the gap between the digital world and real world opportunities through AI training and rewards.",
-    "slogan": "Exist Beyond the Moment"
+    "logo": `${siteUrl}/jovia-favicon.png`,
+    "description": "Jovia Network is a multinational networking platform for digital skills, entertainment, and engaging activities.",
+    "slogan": "Just One Vision: Intelligent Advancement"
   };
 
   return (
@@ -36,7 +36,7 @@ export default function Header() {
         <meta name="description" content={pageDescription} />
         <meta
           name="keywords"
-          content="Evermore Network, Evermore Ai, Evermore Network Ai, Evermorenet, Evermorenet Ai, Ever Ai"
+          content="Jovia Network, digital skills, entertainment, online activities, intelligent advancement"
         />
         <link rel="canonical" href={siteUrl} />
 
@@ -75,14 +75,14 @@ export default function Header() {
               <a
                 href="/"
                 className="flex items-center gap-3"
-                aria-label="Evermore Network Homepage"
+                aria-label="Jovia Network Homepage"
               >
                 <img
                   src={logo}
-                  alt="Evermore Network Logo"
-                  width="140"
-                  height="44"
-                  className="h-11 w-auto object-contain"
+                  alt="Jovia Network Logo"
+                  width="100"
+                  height="100"
+                  className="h-[100px] w-[100px] object-contain"
                 />
               </a>
 

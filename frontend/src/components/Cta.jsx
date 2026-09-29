@@ -37,7 +37,7 @@ export default function Cta() {
               font-semibold
             "
           >
-            Start Your Evermore Journey
+            Start Your Jovia Journey
           </span>
 
           <h2
@@ -50,13 +50,13 @@ export default function Cta() {
               text-white
             "
           >
-            Unlock AI Training,
-            <span className="block text-[#00E57B]">Remote Jobs & Rewards</span>
+            Discover Jovia Network,
+            <span className="block text-[#00E57B]">Tools, Skills & Activities</span>
           </h2>
 
           <p className="mt-4 text-white/80 text-sm md:text-base max-w-xl mx-auto">
-            Join Evermore and start earning through AI training, commissions,
-            and global remote opportunities.
+            Explore a connected mix of networking, digital skills,
+            entertainment, and engaging activities.
           </p>
 
           <div className="mt-6 flex flex-col sm:flex-row gap-3 justify-center">

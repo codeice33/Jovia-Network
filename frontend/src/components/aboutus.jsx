@@ -1,13 +1,13 @@
-import heroVisual from "@/assets/img/evermorehero0.jpg";
-import heroAI from "@/assets/img/image0AI.jpeg";
+import heroVisual from "@/assets/img/c18bf5d9-af6a-489b-8fbe-e1c2d1ac3b4d.jpeg.jpg";
+import activitiesImage from "@/assets/img/8371e1e4-dbc7-41b3-adb8-13c3e538c4a0.jpeg.jpg";
 import { Link } from "react-router-dom";
 
 export default function AboutSection() {
   return (
-    <section className="relative overflow-hidden bg-white py-24 md:py-32">
+    <section id="about" className="relative overflow-hidden bg-white py-24 md:py-32">
       <div className="relative z-10 max-w-7xl mx-auto px-5 sm:px-8">
         {/* Header */}
-        {/* SECTION 1 - EVERAI */}
+        {/* SECTION 1 - JOVIA NETWORK */}
         <div className="mt-24 grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Image */}
           <div className="relative">
@@ -22,7 +22,7 @@ export default function AboutSection() {
             >
               <img
                 src={heroVisual}
-                alt="EverAI"
+                alt="Jovia Network"
                 className="w-full h-full rounded-2xl object-cover"
               />
             </div>
@@ -44,7 +44,7 @@ export default function AboutSection() {
         font-semibold
       "
             >
-              Core Product
+              About Jovia Network
             </div>
 
             <h3
@@ -57,7 +57,7 @@ export default function AboutSection() {
         text-[#0E2258]
       "
             >
-              Meet
+              One Vision
               <span
                 className="
           block
@@ -69,7 +69,7 @@ export default function AboutSection() {
           text-transparent
         "
               >
-                EverAI
+                Intelligent Advancement
               </span>
             </h3>
 
@@ -81,9 +81,10 @@ export default function AboutSection() {
         text-[#0E2258]/75
       "
             >
-              EverAI is the core product developed by the Evermore brand and
-              serves as the foundation for many of our future technologies,
-              features and intelligent systems.
+              Jovia Network is a multinational networking platform built around
+              one guiding idea: Just One Vision, Intelligent Advancement. It
+              connects people with digital skills, entertainment, and engaging
+              activities across multiple categories.
             </p>
 
             <p
@@ -93,9 +94,11 @@ export default function AboutSection() {
         leading-relaxed
       "
             >
-              Built as a Generative Artificial Intelligence assistant, EverAI is
-              designed to understand human language, process prompts and
-              generate intelligent responses based on user instructions.
+              Jovia is designed for people with different interests and
+              schedules. Browse the activities available to you, read how each
+              one works, and decide what fits your time and location. Some
+              activities are digital and social; others focus on entertainment
+              or participation in a specific event.
             </p>
 
             <p
@@ -105,10 +108,11 @@ export default function AboutSection() {
         leading-relaxed
       "
             >
-              To become smarter and more human-like, EverAI requires training,
-              feedback and continuous improvements. We provide opportunities for
-              contributors to help train, correct and enhance its memory,
-              reasoning and response capabilities through simple tasks.
+              The flyers highlight ways to connect, build digital skills, enjoy
+              entertainment, and take part in activities. They also describe
+              timed participation: choose an available duration, follow the
+              instructions, and take part while the activity is running. Check
+              the current activity details for its availability and rules.
             </p>
 
             <p
@@ -118,9 +122,12 @@ export default function AboutSection() {
         leading-relaxed
       "
             >
-              Through our reward system, contributors are recognized and paid
-              based on the value of their completed tasks and their impact on
-              EverAI's development and intelligence growth.
+              Jovia's stated vision is intelligent advancement, with user
+              welfare as a priority. The best way to get started is to explore
+              the platform, understand what each activity involves, and choose
+              whether it suits you. Participation, benefits, and any advertised
+              rewards are subject to the current terms and eligibility; review
+              those details before taking part.
             </p>
 
             {/* Highlights */}
@@ -136,7 +143,7 @@ export default function AboutSection() {
           font-medium
         "
               >
-                AI Training
+                Networking
               </div>
 
               <div
@@ -150,7 +157,7 @@ export default function AboutSection() {
           font-medium
         "
               >
-                Memory Enhancement
+                Digital Skills
               </div>
 
               <div
@@ -164,7 +171,7 @@ export default function AboutSection() {
           font-medium
         "
               >
-                Earn Rewards
+                Entertainment
               </div>
             </div>
 
@@ -190,7 +197,7 @@ export default function AboutSection() {
           duration-300
         "
               >
-                Join EverAI Training
+                Explore Jovia
               </Link>
             </div>
           </div>
@@ -214,7 +221,7 @@ export default function AboutSection() {
         font-semibold
       "
             >
-              About EverAI
+              Opportunities on Jovia
             </span>
 
             <h3
@@ -227,7 +234,7 @@ export default function AboutSection() {
         text-[#0E2258]
       "
             >
-              Unlock Global Remote Job
+              Learn, Create, and Explore
               <span
                 className="
           block
@@ -239,29 +246,33 @@ export default function AboutSection() {
           text-transparent
         "
               >
-                Opportunities with EverAI.
+                with Jovia Network.
               </span>
             </h3>
 
             <p className="mt-6 text-black/60 leading-relaxed text-lg">
-              Signing up on EverAI Assistant gives you access to a new dimension
-              of opportunities within the global digital labour market.
+              Jovia brings networking, digital skills, entertainment, and
+              engaging activities together in one platform. Members can browse
+              the categories, read each activity's instructions, and decide
+              what fits their interests and available time. There is no single
+              route everyone has to follow.
             </p>
 
             <p className="mt-4 text-black/60 leading-relaxed">
-              EverAI has been developed to source and distribute remote job
-              opportunities from around the world, helping subscribers discover
-              relevant opportunities without having to search endlessly across
-              multiple platforms.
+              Some activities use a countdown. Where offered, participants
+              select an available duration, follow the activity instructions,
+              and take part while the timer runs. The flyers describe different
+              activity options and example rewards, but availability and
+              eligibility may vary. Check the current terms for each activity;
+              advertised rewards should not be read as guaranteed income.
             </p>
 
             <p className="mt-4 text-black/60 leading-relaxed">
-              The system is designed to identify, filter, and promptly notify
-              subscribers when new remote jobs and opportunities become
-              available, paying as high as{" "}
-              <span className="font-semibold">$18.6/hour</span>. Most job offers
-              are simple tasks that require little to no experience, special
-              skills, or qualifications.
+              Jovia's vision is a connected network where people can discover
+              activities, develop digital skills, and participate in ways that
+              suit them. Review the latest details on the platform before
+              joining an activity, as formats, terms, and availability can
+              change.
             </p>
           </div>
 
@@ -271,8 +282,8 @@ export default function AboutSection() {
 
             <div className="relative overflow-hidden rounded-[32px] border border-black/10">
               <img
-                src={heroAI}
-                alt="EverAI Remote Jobs"
+                src={activitiesImage}
+                alt="Jovia Network opportunities"
                 className="w-full h-full object-cover"
               />
             </div>

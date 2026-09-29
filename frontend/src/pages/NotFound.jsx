@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import logo from "@/assets/img/evermorelogo.png";
+import logo from "@/assets/logo.png";
 
 export default function NotFound() {
   return (
@@ -8,8 +8,10 @@ export default function NotFound() {
         {/* Logo */}
         <img
           src={logo}
-          alt="Evermore"
-          className="h-12 mx-auto object-contain"
+          alt="Jovia Network Logo"
+          width="100"
+          height="100"
+          className="h-[100px] w-[100px] mx-auto object-contain"
         />
 
         {/* Hero 404 Display */}

@@ -1,17 +1,17 @@
-import heroAIing from "@/assets/img/everphoto.jpg";
+import activitiesImage from "@/assets/img/45379499-19fa-43d7-8def-5d74bce2d679.jpeg.jpg";
 
 const FAQS = [
   {
-    q: "What is Evermore?",
-    a: "Evermore bridges the gap between the digital world and real-world opportunities while contributing to the development of next-generation Generative Artificial Intelligence.",
+    q: "What is Jovia Network?",
+    a: "Jovia Network is a multinational networking platform that brings together digital skills, entertainment, and engaging activities under the vision of Just One Vision: Intelligent Advancement.",
   },
   {
-    q: "What is Evermore's mission?",
-    a: "We focus on creating better prompts, more intelligent interactions, and increasing human-like responses to make AI more useful and natural.",
+    q: "What activities are available?",
+    a: "Activities span networking, digital skills, entertainment, and online participation. Options and availability can vary, so check the current activity list and details on the platform.",
   },
   {
-    q: "How can I earn rewards?",
-    a: "Users can earn rewards by helping train our AI, improving memory functions, and contributing to the growth of our platform.",
+    q: "Are rewards guaranteed?",
+    a: "Yes. Flyers show examples for specific activities. Any reward depends on current activity terms and eligibility, so review the details before participating.",
   },
 ];
 
@@ -19,43 +19,37 @@ export default function FAQ() {
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-sky-50 via-blue-50 to-cyan-50 py-12 md:py-16">
       <div className="max-w-7xl mx-auto px-5 sm:px-8">
-        {/* ABOUT EVERAI */}
+        {/* ABOUT JOVIA NETWORK */}
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Content */}
           <div className="order-2 lg:order-1">
             <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#0F9AC5]/10 text-[#0E2258] text-sm font-semibold">
-              EverAI Mentorship Program
+              Networking and Activities
             </span>
 
             <h3 className="mt-5 text-4xl md:text-6xl font-black leading-tight text-[#0E2258]">
-              Learn, Earn &
+              Connect and
               <span className="block bg-gradient-to-r from-[#0E2258] via-[#0F9AC5] to-[#00E57B] bg-clip-text text-transparent">
-                Grow with EverAI
+                Explore Jovia Network
               </span>
             </h3>
 
             <p className="mt-6 text-black/60 leading-relaxed text-lg">
-              Understanding our products and opportunities is not a myth as we
-              have provided every subscriber with a personal mentor immediately
-              after signing up.
+              Jovia brings digital experiences together for people with
+              different interests, from learning and creative work to online
+              activities and entertainment.
             </p>
 
             <p className="mt-4 text-black/60 leading-relaxed">
-              Our mentorship program creates a pathway where every EverAI
-              subscriber receives dedicated guidance and support to fully
-              understand all monetization opportunities available on Evermore.
-            </p>
-
-            <p className="mt-4 text-black/60 leading-relaxed">
-              Your personal mentor will help you understand how to navigate the
-              platform, explore available earning opportunities, and, most
-              importantly, learn how to earn hourly while training our
-              generative AI.
+              The platform spans networking, digital skills, entertainment,
+              and activities across different categories. Explore the available
+              options, read each activity's instructions, and decide what
+              matches your interests and availability.
             </p>
 
             <div className="mt-6 inline-flex items-center px-4 py-2 rounded-xl bg-[#00E57B]/10 border border-[#00E57B]/20">
               <span className="font-semibold text-[#0E2258]">
-                Earn up to $18.6/hour while contributing to AI training.
+                Explore activities, build skills, and connect.
               </span>
             </div>
           </div>
@@ -66,8 +60,8 @@ export default function FAQ() {
 
             <div className="relative overflow-hidden rounded-[32px] border border-black/10">
               <img
-                src={heroAIing}
-                alt="EverAI Mentorship Program"
+                src={activitiesImage}
+                alt="Jovia Network"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -78,7 +72,7 @@ export default function FAQ() {
         <div id="faq" className="max-w-5xl mx-auto mt-24">
           <div className="max-w-2xl mx-auto text-center">
             <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#0F9AC5]/10 text-[#0E2258] text-sm font-semibold">
-              FAQ EverAI
+              Jovia Network FAQ
             </span>
 
             <h3 className="mt-5 text-4xl md:text-6xl font-black leading-tight text-[#0E2258]">
@@ -89,8 +83,8 @@ export default function FAQ() {
             </h3>
 
             <p className="mt-3 text-sm md:text-base text-slate-600">
-              Learn more about Evermore, our AI mission, reward system, and
-              opportunities.
+              Learn about Jovia Network, its activities, and participation
+              details.
             </p>
           </div>
 

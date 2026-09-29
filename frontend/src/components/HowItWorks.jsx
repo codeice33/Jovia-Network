@@ -3,18 +3,18 @@ import { Link } from "react-router-dom";
 const STEPS = [
   {
     number: "01",
-    title: "Create Your Account",
-    body: "Join Evermore and become part of a growing network helping shape the future of Generative Artificial Intelligence.",
+    title: "Explore the Network",
+    body: "Discover Jovia's networking, digital skills, entertainment, and activities across different categories.",
   },
   {
     number: "02",
-    title: "Contribute & Train AI",
-    body: "Participate in AI memory training, prompt improvement, response evaluation and human intelligence tasks.",
+    title: "Choose an Activity",
+    body: "Read the activity details, timing, and requirements, then choose an option that suits your interests.",
   },
   {
     number: "03",
-    title: "Earn Rewards",
-    body: "Receive rewards for your contributions while helping create smarter and more human-like AI systems.",
+    title: "Take Part",
+    body: "Follow the instructions for the activity you select. Any benefits or rewards depend on its current terms and eligibility.",
   },
 ];
 
@@ -50,7 +50,7 @@ export default function HowItWorks() {
             "
           >
             <div className="w-2 h-2 rounded-full bg-[#00E57B] animate-pulse" />
-            How Evermore Works
+            How to Take Part
           </div>
 
           <h2
@@ -63,7 +63,7 @@ export default function HowItWorks() {
               text-[#0E2258]
             "
           >
-            From Human Intelligence
+            One Network
             <span
               className="
                 block
@@ -75,7 +75,7 @@ export default function HowItWorks() {
                 text-transparent
               "
             >
-              To Smarter AI
+              Many Ways to Connect
             </span>
           </h2>
 
@@ -89,9 +89,9 @@ export default function HowItWorks() {
               mx-auto
             "
           >
-            Join Evermore, contribute to the development of advanced AI systems,
-            improve memory functions and earn rewards while helping shape the
-            future of intelligent technology.
+            Browse the available categories, review how each activity works,
+            and choose how to participate based on your interests, time, and
+            the current requirements.
           </p>
         </div>
 

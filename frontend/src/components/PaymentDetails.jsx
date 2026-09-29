@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { BANK_DETAILS, PLANS, TELEGRAM_HANDLE, TELEGRAM_PREFILLED_URL } from '@/lib/constants';
 
 export default function PaymentDetails({ user }) {
@@ -28,7 +29,7 @@ export default function PaymentDetails({ user }) {
         </span>
         <h1 className="font-display font-bold text-2xl tracking-tight">Account created</h1>
       </div>
-      <p className="text-sm text-ink/50 mt-1 mb-6">Complete payment to activate your line.</p>
+      <p className="text-sm text-ink/50 mt-1 mb-6">Complete payment to activate your Jovia account.</p>
 
       <div className="bg-paperSoft rounded-2xl p-5 mb-5">
         <div className="flex justify-between text-sm py-1.5">
@@ -37,11 +38,15 @@ export default function PaymentDetails({ user }) {
         </div>
         <div className="flex justify-between text-sm py-1.5 border-t border-ink/8">
           <span className="text-ink/50">Plan selected</span>
-          <span className="font-semibold">{user.plan}</span>
+          <span className="font-semibold">{plan?.name || user.plan}</span>
         </div>
         <div className="flex justify-between text-sm py-1.5 border-t border-ink/8">
           <span className="text-ink/50">Amount due</span>
-          <span className="font-semibold font-mono">{plan?.priceLabel}</span>
+          <span className="font-semibold font-mono">{plan?.price}</span>
+        </div>
+        <div className="flex justify-between text-sm py-1.5 border-t border-ink/8">
+          <span className="text-ink/50">Smash Bonus</span>
+          <span className="font-semibold font-mono">₦{(plan?.smashBonus || 0).toLocaleString('en-NG')}</span>
         </div>
       </div>
 
@@ -69,12 +74,12 @@ export default function PaymentDetails({ user }) {
           Copy bank details
         </button>
         {copied && (
-          <p className="text-xs text-brandDeep mt-2 text-center">✅ Copied to clipboard!</p>
+          <p className="text-xs text-brandDeep mt-2 text-center"> Copied to clipboard!</p>
         )}
       </div>
 
       <div className="mt-5 flex items-start gap-3 bg-inkSoft text-paper rounded-2xl p-5">
-        <span className="text-lg">✈️</span>
+        <span className="text-lg"></span>
         <p className="text-sm leading-relaxed text-paper/80">
           Once you've made payment, send your payment proof (screenshot or receipt) to{' '}
           <a
@@ -85,7 +90,7 @@ export default function PaymentDetails({ user }) {
           >
             @{TELEGRAM_HANDLE}
           </a>{' '}
-          on Telegram to activate your line. Activation usually takes under 15 minutes.
+          on Telegram to activate your Jovia account. Activation time may vary.
         </p>
       </div>
 
@@ -100,6 +105,13 @@ export default function PaymentDetails({ user }) {
         </svg>
         Send Proof on Telegram
       </a>
+
+      <Link
+        to="/dashboard"
+        className="block mt-4 text-center text-sm font-semibold text-brand hover:underline"
+      >
+        Return to dashboard
+      </Link>
     </div>
   );
 }

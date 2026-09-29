@@ -13,8 +13,8 @@ export default function About() {
       <main className="pt-[80px] sm:pt-[90px]">
         <PageHero
           title="About Us"
-          subtitle="Learn more about our mission, core values, and the team driving our digital innovations."
-          category="About Us Evermore"
+          subtitle="Discover Jovia Network's vision, activities, and the ways members can connect and participate."
+          category="About Us Jovia"
         />
         {/* Rest of the page content */}
       </main>

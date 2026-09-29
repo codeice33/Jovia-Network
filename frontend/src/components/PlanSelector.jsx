@@ -21,7 +21,7 @@ export default function PlanSelector({ value, onChange }) {
       >
         {PLANS.map((plan) => (
           <option key={plan.id} value={plan.id}>
-            {plan.name} - {plan.displayPrice}
+            {plan.name} - {plan.price}
           </option>
         ))}
       </select>

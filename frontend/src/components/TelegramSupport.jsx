@@ -1,14 +1,15 @@
 import React from "react";
+import { TELEGRAM_HANDLE } from "@/lib/constants";
 
 export default function TelegramSupport({
-  username = "Evermorenet_ai_agent",
+  username = TELEGRAM_HANDLE,
 }) {
   return (
     <>
       <style>{`
         :root {
-          --primary-denim: #0E2258;
-          --secondary-cyan: #0F9AC5;
+          --primary-denim: #320757;
+          --secondary-cyan: #FEBD01;
           --accent-white: #E5E5E5;
           --accent-green: #00E57B;
         }
@@ -32,7 +33,7 @@ export default function TelegramSupport({
           text-decoration: none;
           font-weight: 600;
           font-size: 13px;
-          box-shadow: 0 4px 14px rgba(14, 34, 88, 0.3);
+          box-shadow: 0 4px 14px rgba(50, 7, 87, 0.3);
           transition: all 0.3s ease;
         }
 

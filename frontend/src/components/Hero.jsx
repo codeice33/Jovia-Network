@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import heroVisual from "@/assets/img/Evermoreoflala.jpg";
+import heroVisual from "@/assets/img/1533dfab-5451-4636-94d6-96c9082c1610.jpeg.jpg";
 
 export default function Hero() {
   const [imageLoaded, setImageLoaded] = useState(false);
@@ -47,7 +47,7 @@ export default function Hero() {
               "
             >
               <div className="w-2 h-2 rounded-full bg-[#00E57B] animate-pulse" />
-              Next Generation AI Ecosystem
+              A Network Built Around One Vision
             </div>
 
             <h1
@@ -62,7 +62,7 @@ export default function Hero() {
                 text-[#0E2258]
               "
             >
-              Building The
+              Just One Vision
               <span
                 className="
                   block
@@ -74,10 +74,10 @@ export default function Hero() {
                   text-transparent
                 "
               >
-                Future Memory
+                Intelligent Advancement
               </span>
               <span className="block text-[#0E2258]/35">
-                Of Artificial Intelligence
+                Through Connection
               </span>
             </h1>
 
@@ -91,9 +91,10 @@ export default function Hero() {
                 max-w-xl
               "
             >
-              Earn rewards by helping train AI, improving memory functions,
-              contributing to advanced learning systems, promoting products, and
-              driving real-world adoption of intelligent technologies.
+              Jovia Network brings people together through networking, digital
+              skills, entertainment, and engaging activities across different
+              categories. Explore what is available and choose how you want to
+              take part.
             </p>
 
             {/* Buttons */}
@@ -118,7 +119,7 @@ export default function Hero() {
                   
                 "
               >
-                Join Evermore
+                Explore Jovia
               </Link>
 
               <a
@@ -185,7 +186,7 @@ export default function Hero() {
 
               <img
                 src={heroVisual}
-                alt="Evermore"
+                alt="Jovia Network"
                 fetchPriority="high"
                 decoding="async"
                 draggable="false"

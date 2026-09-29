@@ -16,19 +16,19 @@ export default function Plans() {
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto">
           <span className="inline-flex items-center px-4 py-2 rounded-full bg-[#0F9AC5]/10 text-[#0E2258] text-sm font-semibold">
-            Evermore Plans
+            Jovia Plans
           </span>
 
           <h2 className="mt-4 text-3xl md:text-5xl font-black leading-tight text-[#0E2258]">
-            The Projected Reward
+            Activities and
             <span className="block bg-gradient-to-r from-[#0E2258] via-[#0F9AC5] to-[#00E57B] bg-clip-text text-transparent">
-              System On Evermore
+              Participation
             </span>
           </h2>
 
           <p className="mt-3 text-sm md:text-base text-slate-600">
-            Choose a subscription plan and start earning through AI training,
-            commissions, rewards, and remote job opportunities.
+            Review the available plans, prices, and terms. Activity access,
+            eligibility, and any advertised rewards depend on current details.
           </p>
         </div>
 

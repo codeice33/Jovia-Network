@@ -1,5 +1,5 @@
-import heroVideo1 from "@/assets/img/Video002e.mp4";
-import heroAIvide from "@/assets/img/Video001e.mp4";
+import heroVideo1 from "@/assets/img/88c8e639-6e7d-4f93-aed7-53dd41560013.mov";
+import joviaClip from "@/assets/img/596b435a-0589-49e3-8cd9-1cae03b14cc3.mov";
 import { Link } from "react-router-dom";
 
 export default function Video() {
@@ -11,34 +11,34 @@ export default function Video() {
           {/* Content Left */}
           <div className="order-2 lg:order-1">
             <h3 className="mt-5 text-4xl md:text-6xl font-black leading-tight text-[#0E2258]">
-              Evermore is Opening{" "}
+              Discover Jovia Network{" "}
               <span className="block bg-gradient-to-r from-[#0E2258] via-[#0F9AC5] to-[#00E57B] bg-clip-text text-transparent">
-                Opportunities for Africans!
+                Digital Possibilities
               </span>
             </h3>
 
             <p className="mt-6 text-[#0E2258]/80 leading-relaxed text-lg">
-              Evermore has opened opportunities for thousands of Africans to
-              earn money hourly by doing something as simple as answering
-              questions and providing human responses that help make EverAI
-              smarter before its launch.
+              Jovia Network brings together digital skills, entertainment,
+              networking, and activities across several categories. Members can
+              explore the platform, learn how each activity works, and decide
+              which options fit their interests and availability.
             </p>
 
             <p className="mt-4 text-[#0E2258]/70 leading-relaxed">
-              You don’t need to be an AI expert. You simply share your
-              knowledge, experiences, and opinions through simple tasks—and get
-              paid for your contribution.
+              The flyers highlight networking, digital skills, entertainment,
+              and engaging activities across several categories. Browse the
+              current options and choose what fits your interests and schedule.
             </p>
 
             <p className="mt-4 text-[#0E2258]/70 leading-relaxed font-medium">
-              Why watch others earn when you can be part of it? This could be
-              your opportunity to turn your free time into extra income while
-              contributing to the development of smarter AI.
+              Activities may have different instructions, eligibility rules,
+              and terms. Review the current details before participating, and
+              treat any promotional rewards as subject to those terms rather
+              than guaranteed income.
             </p>
 
             <p className="mt-4 text-[#0E2258] font-semibold leading-relaxed">
-              Join Evermore. Start participating. Start earning. Grab the
-              opportunity now… and thank me later!
+              Explore Jovia. Find the tools and activities that fit you.
             </p>
           </div>
 
@@ -49,7 +49,7 @@ export default function Video() {
 
             <div className="relative overflow-hidden rounded-[32px]">
               <video
-                src={heroAIvide}
+                src={joviaClip}
                 autoPlay
                 loop
                 muted
@@ -60,7 +60,7 @@ export default function Video() {
           </div>
         </div>
 
-        {/* SECTION 2 - EVERAI */}
+        {/* SECTION 2 - PARTICIPATION */}
         <div className="mt-24 grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Video Container 1 */}
           <div className="relative group">
@@ -82,30 +82,27 @@ export default function Video() {
           {/* Content */}
           <div>
             <h3 className="mt-5 text-4xl md:text-6xl font-black leading-tight text-[#0E2258]">
-              Get Paid to Train the
+              Choose How to
               <span className="block bg-gradient-to-r from-[#0E2258] via-[#0F9AC5] to-[#00E57B] bg-clip-text text-transparent">
-                Next Generation of AI
+                Take Part
               </span>
             </h3>
             <p className="mt-6 text-lg leading-relaxed text-[#0E2258]/75">
-              Have you ever wondered how AI assistants like ChatGPT, Claude,
-              Grok, and Gemini get answers to questions and prompts they are
-              asked? It is because AI assistants are trained by humans'
-              interactions, knowledge, and experiences through surveys.
+              Some Jovia activities use a countdown. Where available, choose
+              an activity and duration, read its instructions, and participate
+              while the timer runs.
             </p>
 
             <p className="mt-5 text-[#0E2258]/70 leading-relaxed">
-              This new EverAI needs the same training before it launches, and
-              the brand company is paying up to{" "}
-              <span className="font-semibold text-[#0E2258]">$18.6 hourly</span>{" "}
-              to people training this AI. You are not penalized as there are no
-              wrong answers; your responses are documented and you get paid
-              hourly.
+              Activities may differ by category, location, eligibility, and
+              availability. Check the current details on the platform so you
+              know what participation involves.
             </p>
 
             <p className="mt-5 text-[#0E2258]/70 leading-relaxed font-medium">
-              The opportunity to join the trainers getting paid is still
-              open—ask me more before slots get filled.
+              Any rewards shown in promotional materials are examples and
+              remain subject to the activity's current terms; they are not
+              guaranteed income.
             </p>
 
             {/* CTA */}
@@ -114,7 +111,7 @@ export default function Video() {
                 to="/register"
                 className="inline-flex items-center justify-center px-8 py-4 rounded-2xl font-semibold text-white bg-gradient-to-r from-[#0E2258] via-[#15347A] to-[#0F9AC5] hover:shadow-lg hover:shadow-[#0F9AC5]/25 transition-all duration-300 transform hover:-translate-y-0.5"
               >
-                Join EverAI Training
+                Explore Jovia
               </Link>
             </div>
           </div>

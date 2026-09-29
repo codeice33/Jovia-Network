@@ -1,33 +1,33 @@
 const FEATURES = [
   {
     badge: "◈",
-    title: "Like, Follow & Share",
-    body: "Engage with posts on Instagram, TikTok and X — follow a page, like a post, or share to your story.",
+    title: "Networking",
+    body: "Connect with people and explore a platform built around shared interests and participation.",
   },
   {
     badge: "✦",
-    title: "Rate & Review",
-    body: "Try an app or product and leave a short, honest review. Quick to do, and it pays every time.",
+    title: "Digital Skills",
+    body: "Discover digital activities and opportunities to build familiarity with online tools and services.",
   },
   {
     badge: "▶",
-    title: "Watch & Earn",
-    body: "Watch short sponsored videos and answer one quick question at the end to confirm your reward.",
+    title: "Entertainment",
+    body: "Explore entertainment categories and activities featured across the Jovia Network.",
   },
   {
     badge: "▣",
-    title: "Quick Surveys",
-    body: "Share your opinion on short surveys from brands. Two minutes of your time, straight to your balance.",
+    title: "Engaging Activities",
+    body: "Browse different activity formats and review the instructions before you decide to participate.",
   },
   {
     badge: "⬡",
-    title: "Daily Check-in Bonus",
-    body: "Open the app and check in every day. Streaks build a growing bonus that resets your monthly best.",
+    title: "Countdown Participation",
+    body: "Some activities let you choose an available duration and participate while the countdown runs.",
   },
   {
     badge: "◎",
-    title: "Invite Friends & Family",
-    body: "Share your unique link. When someone joins and completes their first task, you both get rewarded.",
+    title: "One Vision",
+    body: "Jovia stands for Just One Vision: Intelligent Advancement, with user welfare at the center.",
   },
 ];
 
@@ -60,21 +60,21 @@ export default function Features() {
         {/* Header */}
         <div className="max-w-3xl mx-auto text-center">
           <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/10 bg-white/5 backdrop-blur-xl text-xs uppercase tracking-[0.3em] text-white/60">
-            WAYS TO EARN
+            EXPLORE JOVIA
           </span>
 
           <h2 className="mt-6 font-display font-bold text-4xl md:text-6xl leading-tight tracking-tight">
-            Simple tasks.
+            One network.
             <br />
             <span className="bg-gradient-to-r from-white via-gray-300 to-white bg-clip-text text-transparent">
-              Real payouts.
+              Many ways to connect.
             </span>
           </h2>
 
           <p className="mt-6 text-lg text-white/60 max-w-2xl mx-auto leading-relaxed">
-            No experience required. Pick a task, complete it in minutes, and
-            watch your balance grow — everything is tracked and paid out
-            transparently.
+            Explore networking, digital skills, entertainment, and activities
+            across different categories. Availability and participation terms
+            vary by activity.
           </p>
         </div>
 
